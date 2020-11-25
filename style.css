@@ -1,0 +1,67 @@
+@import url();
+@import url();
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+  background: rgb(227, 195, 164);
+}
+
+header {
+  position: fixed;
+  background: rgb(240, 70, 40);
+  color: white;
+  width: 100%;
+  padding: 5px 10px;
+  top : 0px;
+  left: 0px;
+  display: flex;
+}
+
+#logo {
+  height: 80px;
+}
+
+.pages {
+  height: 40px;
+  width: 40px;
+  margin: 20px 15px;
+  border-radius: 50%;
+  background: white;
+}
+
+.current {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  right: 40px;
+  top: 10px;
+}
+
+#image1 {
+  height: 200px;
+  width: 70%;
+  background: white;
+  margin: 200px 15%;
+}
