@@ -1,5 +1,5 @@
-@import url();
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -20,6 +20,26 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 40pt;
+  margin: 0px 15%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30pt;
+}
+
+h3 {
+  font-size: 20pt;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 14pt;
 }
 
 body {
@@ -32,9 +52,22 @@ header {
   color: white;
   width: 100%;
   padding: 5px 10px;
-  top : 0px;
+  top: 0px;
   left: 0px;
   display: flex;
+  box-shadow: 0px 0px 5px black;
+}
+
+footer {
+  position: fixed;
+  background: rgb(245, 130, 55);
+  color: white;
+  width: 100%;
+  padding: 3px 5px;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  box-shadow: 0px 0px 1px black;
 }
 
 #logo {
@@ -60,8 +93,51 @@ header {
 }
 
 #image1 {
-  height: 200px;
-  width: 70%;
+  width: 100%;
+  margin: 90px 0px 10px 0px;
+}
+
+#flex {
+  margin: 10px 10% 35px 10%;
+  display: flex;
+}
+
+#image2 {
+  width: 60%;
+}
+
+.button > h2, .button > h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#donatebutton {
+  width: 25%;
+  height: 20%;
+  border-radius: 5%;
   background: white;
-  margin: 200px 15%;
+  margin-top: 2%;
+  position: absolute;
+  right: 12.5%;
+}
+
+#morebutton {
+  width: 20%;
+  height: 15%;
+  border-radius: 5%;
+  background: white;
+  margin-top: 16%;
+  position: absolute;
+  right: 15%;
+}
+
+.social {
+  height: 25px;
+  width: 25px;
+  margin: 1px 5px;
+  border-radius: 100%;
+  background: white;
 }
