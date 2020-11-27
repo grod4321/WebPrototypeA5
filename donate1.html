@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>NDY Charitable Trust: Donate</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="images/ndy.png" type="image" sizes="16x16">
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" id="logo"><img id="logo" src="images/logo.PNG"></a>
+      <div id="info" class="pages"></div>
+      <div id="about" class="pages"></div>
+      <div id="contact" class="pages"></div>
+      <div id="circle" class="current"></div>
+    </header>
+    <main>
+      <div id="form1" class="donateform">
+        <div id="donatetext">
+          <h2>Your Info</h2><br>
+          <div id="flex2" class="flex">
+            <div class="donatelabel">
+              <label for="title">Title</label><br><br><br>
+              <label for="name1">Name</label><br><br><br>
+              <label for="email">Email</label><br><br><br>
+              <label for="phone">Phone Number</label><br><br><br>
+              <label for="comment">Comment</label><br><br><br>
+            </div>
+            <div id="inputfields">
+              <select id="title" class="shortinput" name="title">
+                <option value="blank">--</option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Ms">Ms</option>
+                <option value="other">other</option>
+              </select><br><br><br>
+              <input type="text" id="name1" class="shortinput" name="name1">
+              <input type="text" id="name2" class="shortinput" name="name2"><br><br><br>
+              <input type="text" id="email" class="longinput" name="email"><br><br><br>
+              <input type="number" id="phone" class="shortinput" name="phone"><br><br><br>
+              <input type="text" id="comment" class="longinput" name="comment"><br><br><br>
+            </div>
+          </div>
+          <div class="flex">
+            <a id="next" class="smallbutton" style="text-decoration:none" href="donate2.html">
+              <h3>Next</h3>
+            </a>
+          </div>
+        </div>
+        <img id="d1" src="images/d1.jpg" class="donateimage">
+      </div>
+    </main>
+    <footer>
+      <div id="fb" class="social"></div>
+      <div id="twitter" class="social"></div>
+      <div id="insta" class="social"></div>
+    </footer>
+  </body>
+</html>

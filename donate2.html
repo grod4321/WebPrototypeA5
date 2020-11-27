@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>NDY Charitable Trust: Donate</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="images/ndy.png" type="image" sizes="16x16">
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" id="logo"><img id="logo" src="images/logo.PNG"></a>
+      <div id="info" class="pages"></div>
+      <div id="about" class="pages"></div>
+      <div id="contact" class="pages"></div>
+      <div id="circle" class="current"></div>
+    </header>
+    <main>
+      <div id="form2" class="donateform">
+        <img id="d2" src="images/d2.jpg" class="donateimage">
+        <div id="donatetext">
+          <h2>Payment</h2><br>
+          <div id="flex3" class="flex">
+            <div class="donatelabel">
+              <label for="card">Card Number</label><br><br><br>
+              <label for="cardname">Name on Card</label><br><br><br>
+              <label for="country">Country</label><br><br><br>
+              <label for="address">Address</label><br><br><br>
+              <label for="city">City</label><br><br><br>
+              <label for="state">State & Zip</label><br><br><br>
+            </div>
+            <div id="inputfields">
+              <input type="number" id="card" class="shortinput" name="card"><br><br><br>
+              <input type="text" id="cardname" class="longinput" name="cardname"><br><br><br>
+              <select id="country" class="shortinput" name="country">
+                <option value="blank">--</option>
+                <option value="Australia">Australia</option>
+                <option value="Canada">Canada</option>
+                <option value="England">England</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="NZ">New Zealand</option>
+                <option value="US">United States</option>
+              </select><br><br><br>
+              <input type="text" id="address" class="longinput" name="address"><br><br><br>
+              <input type="text" id="city" class="shortinput" name="city"><br><br><br>
+              <select id="state" class="shortinput" name="state">
+                <option value="blank">--</option>
+                <option value="ACT">ACT</option>
+                <option value="NSW">NSW</option>
+                <option value="NT">NT</option>
+                <option value="QLD">QLD</option>
+                <option value="SA">SA</option>
+                <option value="Vic">Vic</option>
+                <option value="WA">WA</option>
+              </select>
+              <input type="number" id="zip" class="shortinput" name="zip"><br><br><br>
+            </div>
+          </div>
+          <div class="flex">
+            <a id="prev" class="smallbutton" style="text-decoration:none" href="donate1.html">
+              <h3>Prev</h3>
+            </a>
+            <a id="next" class="smallbutton" style="text-decoration:none" href="thanks.html">
+              <h3>Next</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="fb" class="social"></div>
+      <div id="twitter" class="social"></div>
+      <div id="insta" class="social"></div>
+    </footer>
+  </body>
+</html>
