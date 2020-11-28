@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/*styles the website for when the screen is set for desktop dimensions*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); /*imports the font styles for use in the website*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -21,10 +23,10 @@ time, mark, audio, video {
 	vertical-align: baseline;
   font-family: 'Open Sans', sans-serif;
   font-size: 10pt;
-}
+} /*gives general baseline structure to the variables of html elements, giving general ground rules but still allowing them to be later contradicted if need be*/
 
 h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif; /*sets the heading font-style to be different to the other text used in the website*/
   font-size: 40pt;
 }
 
@@ -35,33 +37,33 @@ h2 {
 
 h3 {
   font-family: 'Roboto', sans-serif;
-  font-size: 20pt;
+  font-size: 16pt;
 }
 
 body {
-  background: rgb(243, 240, 240);
+  background: rgb(243, 240, 240); /*sets a light tone for the background of the website*/
 }
 
-header {
-  position: fixed;
+header { /*structures the header of the website*/
+  position: fixed; /*stays on same place on page*/
   background: rgb(240, 70, 40);
   color: white;
-  width: 100%;
-  padding: 5px 10px;
-  top: 0px;
+  width: 100%; /*makes the header fill up the entire width of the screen*/
+  padding: 5px 10px; /*gives objects inside the header padding so they don't touch the sides of the screen*/
+  top: 0px; /*places header at the very top of the screen*/
   left: 0px;
-  display: flex;
-  box-shadow: 0px 0px 5px black;
-  z-index: 3;
+  display: flex; /*objects added horizontally as opposed to vertically*/
+  box-shadow: 0px 0px 5px black; /*adds shadow to the header box*/
+  z-index: 3; /*brings header to the front of the page*/
 }
 
-footer {
+footer { /*structures the footer of the website*/
   position: fixed;
   background: #393941;
   color: white;
   width: 100%;
   padding: 3px 5px;
-  bottom: 0px;
+  bottom: 0px; /*places footer at the very bottom of the screen*/
   left: 0px;
   display: flex;
   box-shadow: 0px 0px 1px black;
@@ -73,41 +75,41 @@ footer {
   margin-right: 15px;
 }
 
-.pages {
+.pages { /*structures the navigation page icons in the header*/
   height: 40px;
   width: 40px;
   margin: 20px 15px;
-  border-radius: 50%;
+  border-radius: 50%; /*makes the pages circular*/
   background: rgb(245, 130, 55);
-  transition: background-color;
+  transition: background-color; 
   transition-duration: 0.3s;
-  transition-timing-function: ease-out;
+  transition-timing-function: ease-out; /*adds animation rules for when the div transitions upon a certain activation*/
 }
 
 .pages:hover {
   background-color: rgb(227, 195, 164);
-  cursor: pointer;
+  cursor: pointer; /*makes it so that the cursor still changes even when the button doesn't actually link to anything, giving the illusion it does*/
 }
 
-.current {
+.current { /*structures the icon for the current page in the header*/
   height: 70px;
   width: 70px;
   border-radius: 50%;
   background: rgb(247, 233, 219);
-  position: absolute;
+  position: absolute; /*keeps the icon for the current screen in the same position, regardless of how the screen changes*/
   right: 40px;
   top: 10px;
 }
 
-.social {
+.social { /*structures the social media icons within the footer*/
   height: 25px;
   width: 25px;
   margin: 1px 5px;
-  border-radius: 100%;
+  border-radius: 50%;
   background: white;
 }
 
-footer > p {
+footer > p { /*sets rules for the paragraph text inside the footer, making it stay on the right*/
   position: absolute;
   right: 40px;
   bottom: 10px;
@@ -116,17 +118,17 @@ footer > p {
 
 #home1 {
   width: 100%;
-  margin: 90px 0px 10px 0px;
+  margin: 90px 0px 10px 0px; /*places the top of the image inline with where the header ends*/
 }
 
 #welcome {
   margin: 0px 15%;
-  text-align: center;
+  text-align: center; /*gives the text a center alignment*/
 }
 
 #welcomeinfo {
   margin: 5px 20%;
-  text-align: justify;
+  text-align: justify; /*makes the text stay in a uniform shape*/
 }
 
 .flex {
@@ -147,35 +149,35 @@ footer > p {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
+} /*keeps the text inside the buttons at the center*/
 
-#donatebutton {
+#donatebutton { /*structures the large donate button at the bottom of the home page*/
   width: 25%;
   height: 20%;
-  border-radius: 10%;
+  border-radius: 10%; /*slightly rounds edges*/
   background: rgb(247, 233, 219);
   margin-top: 1%;
-  position: absolute;
+  position: absolute; /*keeps the button from changing positions on the screen, keeping it in the same place*/
   right: 12.5%;
-  border: 10px solid rgb(245, 130, 55);
+  border: 10px solid rgb(245, 130, 55); /*sets the border of the button*/
   color: rgb(245, 130, 55);
   transition: background-color, color;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
 
-#donatebutton:hover {
+#donatebutton:hover { /*sets the changes for when the button is hovered over*/
   background-color: rgb(245, 130, 55);
   color: white;
   cursor: pointer;
 }
 
-#morebutton {
+#morebutton { /*structures the purely aesthetic more info button below the donate button*/
   width: 16%;
   height: 12%;
   border-radius: 10%;
   background: rgb(247, 233, 219);
-  margin-top: 17%;
+  margin-top: 17%; /*structuring the button so that it can be under the donate button whilst still under the flex display rule*/
   position: absolute;
   right: 18%;
   border: 5px solid rgb(206, 171, 137);
@@ -191,31 +193,31 @@ footer > p {
   cursor: pointer;
 }
 
-.donateform {
+.donateform { /*structures the underlying donation form*/
   width: 80%;
   display: flex;
   margin: 110px auto 40px auto;
   background: rgb(227, 195, 164);
 }
 
-#donatetext {
+#donatetext { /*controls the labels and inputs within the donation form*/
   display: block;
   width: 40%;
   background: white;
   padding: 2% 2%;
 }
 
-.donatelabel {
+.donatelabel { /*specifically structures the labels for the input fields*/
   margin-right: 3%;
   line-height: 170%;
   width: 145px;
 }
 
-#inputfields {
+#inputfields { /*specifically structures the input fields*/
   width: 100%;
 }
 
-.shortinput {
+.shortinput { /*customises variables of the short input fields*/
   width: 44.5%;
   height: 25px;
 }
@@ -237,7 +239,7 @@ footer > p {
   margin: auto 0px auto auto;
 }
 
-.smallbutton {
+.smallbutton { /*customises variables of the small buttons used throughout the website*/
   width: 80px;
   height: 40px;
   background: rgb(247, 233, 219);
@@ -256,35 +258,36 @@ footer > p {
   cursor: pointer;
 }
 
-.smallbutton > h3 {
+.smallbutton > h3 { /*centers the text within the small buttons*/
   display: block;
   margin: auto;
+  margin-top: 5px;
   text-align: center;
 }
 
-#next {
+#next { /*places the next button on the right side of the form*/
   margin-left: auto;
 }
 
-#prev {
+#prev { /*places the prev button on the left side of the form*/
   margin-right: auto;
 }
 
-#homebutton {
+#homebutton { /*places the home button in the center of the box*/
   margin-right: auto;
   margin-left: auto;
 }
 
-#thankimg {
+#thankimg { /*sets the background image on the thank you page*/
   display: block;
   margin: 110px auto 40px auto;
   height: 600px;
   width: 70%;
-  filter: blur(4px);
+  filter: blur(4px); /*makes the image blurry*/
   -webkit-filter: blur(4px);
 }
 
-#thankbox {
+#thankbox { /*structures the box over the image*/
   width: 400px;
   height: 450px;
   background-color: rgb(227, 195, 164);
@@ -292,7 +295,7 @@ footer > p {
   top: 400px;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 2; /*brings the box infront of the background image on the z-axis*/
   padding-top: auto;
   padding-bottom: auto;
 }

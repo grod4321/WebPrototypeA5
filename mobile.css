@@ -1,3 +1,5 @@
+/*styles the website for when the screen is set for mobile dimensions*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
@@ -20,8 +22,8 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
   font-family: 'Open Sans', sans-serif;
-  font-size: 8pt;
-}
+  font-size: 8pt; /*decrease in overall font size*/
+} 
 
 h1 {
   font-family: 'Roboto', sans-serif;
@@ -35,7 +37,7 @@ h2 {
 
 h3 {
   font-family: 'Roboto', sans-serif;
-  font-size: 20pt;
+  font-size: 16pt;
 }
 
 body {
@@ -69,17 +71,17 @@ footer {
 }
 
 #logo {
-  height: 40px;
+  height: 40px; /*logo size halved*/
   margin: auto 0px;
 }
 
-#mobpage {
+#mobpage { /*div put in use to structured the page icons*/
   display: block;
   margin-left: auto;
   margin-right: 10px;
 }
 
-.pages {
+.pages { /*size and margins decreased to fit into the header better*/
   height: 40px;
   width: 40px;
   margin: 5px 5px;
@@ -95,14 +97,14 @@ footer {
   cursor: pointer;
 }
 
-.current {
+.current { /*current page icon completely removed from mobile version as it takes up too much space*/
   height: 0px;
-  width: 50px;
+  width: 70px;
   border-radius: 50%;
   background: rgb(247, 233, 219);
   position: absolute;
-  right: 30px;
-  top: 5px;
+  right: 40px;
+  top: 10px;
 }
 
 .social {
@@ -113,7 +115,7 @@ footer {
   background: white;
 }
 
-footer > p {
+footer > p { /*address formatting changed to simply being along the flexed display div as opposed to sticking to the right side of the screen, as to fit in better with the dimensions*/
   display: block;
   margin-left: auto;
   margin-right: 8px;
@@ -122,11 +124,11 @@ footer > p {
 
 #home1 {
   width: 100%;
-  margin: 60px 0px 10px 0px;
+  margin: 60px 0px 10px 0px; /*top margin of banner image on home page slightly decreased to go along with decrease in size of header in mobile variant*/
 }
 
 #welcome {
-  margin: 0px 5%;
+  margin: 0px 5%; /*side margins decreased to allow text to take up more space*/
   text-align: center;
 }
 
@@ -143,7 +145,7 @@ footer > p {
   margin: 10px 10% 40px 10%;
 }
 
-#home2 {
+#home2 { /*second home image completey removed for a better overall website structure, took up too much space and hid the buttons beneath it otherwise*/
   width: 0px;
 }
 
@@ -163,7 +165,7 @@ footer > p {
   font-size: 15pt;
 }
 
-#donatebutton {
+#donatebutton { /*donate button moved and resized, along with more info button, to work better on the mobile screen*/
   width: 50%;
   height: 100px;
   border-radius: 10%;
@@ -200,7 +202,7 @@ footer > p {
   cursor: pointer;
 }
 
-.donateform {
+.donateform { /*flex now block instead of display to fit image and text in a more mobile-friendly manner*/
   width: 80%;
   display: block;
   margin: 60px auto 40px auto;
@@ -214,7 +216,7 @@ footer > p {
   padding: 2% 2%;
 }
 
-.donatelabel {
+.donatelabel { /*width and line height of labels decreased to accommodate changed font size and screen width*/
   margin-right: 3%;
   line-height: 190%;
   width: 110px;
@@ -234,7 +236,7 @@ footer > p {
   height: 25px;
 }
 
-#d1 {
+#d1 { /*width changed to take up the full width as it is no longer beside the donate form*/
   width: 100%;
   display: block;
 }
@@ -267,6 +269,7 @@ footer > p {
 .smallbutton > h3 {
   display: block;
   margin: auto;
+  margin-top: 5px;
   text-align: center;
 }
 
@@ -283,7 +286,7 @@ footer > p {
   margin-left: auto;
 }
 
-#thankimg {
+#thankimg { /*image and box resized and placed for the mobile format*/
   display: block;
   margin: 100px auto 40px auto;
   height: 500px;
