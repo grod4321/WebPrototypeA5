@@ -3,38 +3,43 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>NDY Charitable Trust: Home</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="images/ndy.png" type="image" sizes="16x16">
+    <title>NDY Charitable Trust: Home</title> <!--sets page title-->
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="mobile.css"> <!--changes which css file the page uses based on width of the screen for better mobile and desktop use-->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 769px)" href="desktop.css">
+    <link rel="icon" href="images/ndy.png" type="image" sizes="16x16"> <!--sets the favicon for the page as NDY's logo-->
   </head>
 
   <body>
-    <header>
-      <img src="images/ndylogo.png" id="logo">
-      <a href="donate1.html"><img src="images/donate.png" id="donate" class="pages"></a>
-      <img src="images/info.png" id="info" class="pages">
-      <img src="images/contact.png" id="contact" class="pages">
-      <img src="images/homeicon.png" id="circle" class="current">
+    <header> <!--header consistent across every page-->
+      <a href="index.html"><img src="images/ndylogo.png" id="logo"></a> <!--places the logo in the header and links to the home page-->
+      <div id="mobpage"> <!--div to improve layout when in mobile dimensions-->
+        <a href="donate1.html"><img src="images/donate.png" id="donate" class="pages"></a> <!--icons for different pages in navbar, the donate button linking to the first donate page-->
+        <img src="images/info.png" id="info" class="pages">
+        <img src="images/contact.png" id="contact" class="pages">
+        <img src="images/homeicon.png" id="circle" class="current"> <!--sets icon for the current page for better navigation-->
+      </div>
     </header>
+
     <main>
-      <img id="home1" src="images/home1.jpg" class="homeimage">
+      <img id="home1" src="images/home1.jpg" class="homeimage"> <!--opening banner image for home page-->
       <h1 id="welcome">Welcome to NDY Charitable Trust</h1>
-      <p id="welcomeinfo">Throughout its history, Norman Disney & Young (NDY) has been committed to giving back to the community in a number of ways. Our commitment to charitable causes has inspired the establishment of the NDY Charitable Trust (NDY Trust) which looks to provide support to communities in need.<br>Poverty in Tanzania is endemic. Ranked 204 out of 230 nations in the world for GDP per capita, as a nation Tanzania is unable to provide its children with a quality education. The government school system is overstretched, under-resourced, and produces poor educational outcomes for Tanzanian society.<br><br>St Jude’s provides a free, high-quality education to children who — due to poverty and social pressures — would otherwise be unlikely to complete their schooling. Drawn from families who often live on less than $1.25 per day, the pupils of St Jude’s are shining examples of what students can achieve when they are given the opportunity to receive a quality education.<br><br>Since 2002 the School of St Jude's has added 150 students to the school each year and in 2015 the first senior class from The School of St Jude graduated from Form 6. Since then they have seen two more cohorts follow suit. They are working towards a model that supports their students through tertiary education and completing the mission to create the next generation of Tanzanian leaders.<br>Regular donations from the NDY Charitable Trust are currently supporting the education of three students.</p>
-      <div id="flex1" class="flex">
-        <img id="home2" src="images/home2.jpg" class="homeimage">
-        <a id="donatebutton" class="homebtn" href="donate1.html">
+      <p id="welcomeinfo">Throughout its history, Norman Disney & Young (NDY) has been committed to giving back to the community in a number of ways. Our commitment to charitable causes has inspired the establishment of the NDY Charitable Trust (NDY Trust) which looks to provide support to communities in need.<br>Poverty in Tanzania is endemic. Ranked 204 out of 230 nations in the world for GDP per capita, as a nation Tanzania is unable to provide its children with a quality education. The government school system is overstretched, under-resourced, and produces poor educational outcomes for Tanzanian society.<br><br>St Jude’s provides a free, high-quality education to children who — due to poverty and social pressures — would otherwise be unlikely to complete their schooling. Drawn from families who often live on less than $1.25 per day, the pupils of St Jude’s are shining examples of what students can achieve when they are given the opportunity to receive a quality education.<br><br>Since 2002 the School of St Jude's has added 150 students to the school each year and in 2015 the first senior class from The School of St Jude graduated from Form 6. Since then they have seen two more cohorts follow suit. They are working towards a model that supports their students through tertiary education and completing the mission to create the next generation of Tanzanian leaders.<br>Regular donations from the NDY Charitable Trust are currently supporting the education of three students.</p> <!--paragraph broken up for easier reading-->
+      <div id="flex1" class="flex"> <!--places the following objects into a flexed display, allowing them to be placed side by side-->
+        <img id="home2" src="images/home2.jpg" class="homeimage"> <!--image for donation encouragement-->
+        <a id="donatebutton" class="homebtn" href="donate1.html" style="text-decoration:none"> <!--creates the button that allows the user to travel to the first donate page-->
           <h1>DONATE</h1>
         </a>
-        <div id="morebutton" class="homebtn">
+        <div id="morebutton" class="homebtn"> <!--purely aesthetic button that could link to a page where the user can get further information on the charity-->
           <h3>More Info</h3>
         </div>
       </div>
     </main>
-    <footer>
+
+    <footer> <!--footer consistent across every page-->
       <a href="https://www.facebook.com/NDYGroup/"><img src="images/fb.png" id="fb" class="social"></a>
       <a href="https://twitter.com/ndygroup"><img src="images/twitter.png" id="twitter" class="social"></a>
-      <a href="https://www.instagram.com/ndygroup/"><img src="images/ig.png" id="insta" class="social"></a>
-      <p>NDY Charitable Trust, Level 1, 60 Miller Street, North Sydney NSW 2060</p>
+      <a href="https://www.instagram.com/ndygroup/"><img src="images/ig.png" id="insta" class="social"></a> <!--social media icons that link to NDYs various social media platforms-->
+      <p>NDY Charitable Trust, Level 1, 60 Miller Street, North Sydney NSW 2060</p> <!--their address because they don't have a contact number-->
     </footer>
   </body>
 </html>

@@ -4,18 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>NDY Charitable Trust: Donate</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 769px)" href="desktop.css">
     <link rel="icon" href="images/ndy.png" type="image" sizes="16x16">
   </head>
 
   <body>
     <header>
       <a href="index.html"><img src="images/ndylogo.png" id="logo"></a>
-      <a href="donate1.html"><img src="images/donate.png" id="donate" class="pages"></a>
-      <img src="images/info.png" id="info" class="pages">
-      <img src="images/contact.png" id="contact" class="pages">
-      <img src="images/donate.png" id="circle" class="current">
+      <div id="mobpage">
+        <a href="donate1.html"><img src="images/donate.png" id="donate" class="pages"></a>
+        <img src="images/info.png" id="info" class="pages">
+        <img src="images/contact.png" id="contact" class="pages">
+        <img src="images/homeicon.png" id="circle" class="current">
+      </div>
     </header>
+
     <main>
       <div id="form1" class="donateform">
         <div id="donatetext">
@@ -52,6 +56,7 @@
         <img id="d1" src="images/d1.jpg" class="donateimage">
       </div>
     </main>
+    
     <footer>
       <a href="https://www.facebook.com/NDYGroup/"><img src="images/fb.png" id="fb" class="social"></a>
       <a href="https://twitter.com/ndygroup"><img src="images/twitter.png" id="twitter" class="social"></a>
